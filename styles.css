@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Poppins', Verdana, Tahoma, sans-serif;
+  color: #333;
+  transition: 0.5s;
+  background-color: rgb(235, 229, 229);
+}
+
+i {
+  color: orange;
+}
+
+.menuLinks,
+.logoDesktop {
+  display: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  background-color: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 25px;
+  margin-left: 7%;
+}
+
+#mainpage {
+  position: relative;
+}
+
+#aboutpage {
+  position: absolute;
+  bottom: 100vh;
+}
+
+#rotateRight,
+#rotateLeft,
+#remove {
+  background-color: #333;
+  z-index: 9;
+}
+
+.menuList {
+  width: 100%;
+  height: 100vh;
+  border: #333 solid 1px;
+  position: fixed;
+  opacity: 80%;
+  background-color: #333;
+  padding: 4rem;
+  top: -100vh;
+  transition: 0.5s;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.menuList a {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.menubar {
+  height: 4px;
+  width: 100%;
+}
+
+main {
+  height: 90%;
+  margin-bottom: 2rem;
+}
+
+.welcome-section,
+.programInfo,
+.events,
+.speakers,
+.speakerCards,
+.speakersFull {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Welcome Section */
+.welcome-section {
+  padding: 0 1rem;
+  font-size: 20px;
+  gap: 2rem;
+  padding-bottom: 3rem;
+  padding-top: 20%;
+  background-image: url('./images/gray-abstract-wireframe-technology-background.jpg');
+  background-size: cover;
+}
+
+.welcome-section h1 {
+  margin-top: -1.8rem;
+  font-weight: 900;
+  font-size: 30px;
+  background-image: url('./images/gettyimages-1236879036-612x612.jpg');
+  background-size: cover;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hello {
+  font-size: 18px;
+  color: rgb(240, 164, 23);
+}
+
+.welcomeP {
+  font-size: 12px;
+  margin: 0 0.5rem;
+}
+
+.welcomeP2 {
+  margin: -2rem 0 0 0;
+}
+
+.welcome-section h2 {
+  font-size: 25px;
+}
+
+/* Main Program */
+
+.programInfo {
+  background-image: url('./images/y-so-serious.png');
+  height: 100vh;
+  color: aliceblue;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.programInfo h4,
+.speakers h4 {
+  border-bottom: rgb(151, 18, 18) solid 2px;
+}
+
+.events {
+  gap: 0.5rem;
+  width: 100%;
+  height: 80%;
+  padding: 2rem 0.5rem;
+}
+
+.eventCards,
+.speakerCard {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.eventCards {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  font-size: 11px;
+  color: aliceblue;
+  background-color: rgb(75, 72, 72);
+}
+
+.eventCards div {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+input,
+button {
+  border: none;
+  font-family: 'Poppins', Verdana, Tahoma, sans-serif;
+}
+
+.eventTitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(238, 69, 69);
+}
+
+#joinBtn {
+  width: 65%;
+  height: 3rem;
+  background-color: rgb(238, 69, 69);
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.speakers {
+  align-items: center;
+  padding: 2rem 0 0 0;
+  background-color: #fff;
+}
+
+.speakersFull {
+  align-items: center;
+  margin-top: -2rem;
+  padding-bottom: 2rem;
+  min-height: 20vh;
+  width: 100%;
+  position: absolute;
+  right: 50rem;
+  transition: 0.5s;
+}
+
+.speakerCards {
+  gap: 0.5rem;
+  width: 100%;
+  height: 80%;
+  padding: 2rem 0.5rem 0 0.5rem;
+}
+
+.speakerCard {
+  width: 100%;
+  height: 9rem;
+  font-size: 12px;
+  background-color: #fff;
+  gap: 0.5rem;
+}
+
+.speakerImage {
+  width: 100%;
+  height: 80%;
+  background-image: url('./images/gettyimages-1236949754-612x612.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30%;
+}
+.lighter {
+  color:rgb(204, 201, 201);
+}
+.speakerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #333;
+  height: 80%;
+}
+
+.dropdown {
+  border: solid rgb(184, 165, 165) 1px;
+  width: 90%;
+  color: #333;
+  background-color: white;
+  height: 2.5rem;
+  margin: 1rem 0;
+}
+
+.drop {
+  color: rgb(238, 69, 69);
+  margin-left: 0.2rem;
+}
+
+.speakerHeader {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.speakerInfoRed {
+  color: rgb(238, 69, 69);
+}
+
+.aboutP {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+#email {
+  display: flex;
+  justify-content: center;
+  margin-top: -2rem;
+  font-size: 15px;
+  color: #333;
+  text-decoration: underline;
+}
+
+.praises {
+  width: 100%;
+  min-height: 20vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  height: 10%;
+  padding-top: 2rem;
+  font-size: 15px;
+  border-bottom: solid red 1px;
+  margin-bottom: 1rem;
+}
+
+.praisesP,
+.previousSummitCard p {
+  padding: 0 2rem;
+  font-size: 12px;
+}
+
+.logo {
+  margin: 10% 0;
+  border: solid rgb(199, 198, 198) 1px;
+  width: 60%;
+  height: 6rem;
+  background-image: url('./images/Logopit_1675766263639.png');
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.aboutP1 {
+  padding: 1rem 4rem;
+}
+
+.previousSummitCard {
+  width: 100%;
+  min-height: 20vh;
+  border-top: solid rgb(199, 198, 198) 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobilelogo {
+  display: block;
+}
+
+.reference {
+  margin-top: 1rem;
+  min-height: 10vh;
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  padding-bottom: 3rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reference li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 10rem;
+  opacity: 80%;
+  background-size: cover;
+}
+
+.fst {
+  background-image: url('./images/gettyimages-1236879036-612x612.jpg');
+  color: rgb(205, 255, 200);
+}
+
+.lst {
+  background-image: url('./images/gettyimages-1236949754-612x612.jpg');
+  color: #fff;
+}
+
+.footer {
+  background-color: #333;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30vh;
+  color: aliceblue;
+  padding: 2rem 0;
+}
+
+.partners {
+  margin-top: -1rem;
+  color: rgb(124, 124, 124);
+  font-size: 1.3rem;
+  display: grid;
+  padding: 2rem 0 0 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.footer2 {
+  width: 100%;
+  background-color: #fff;
+  height: 8rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.final {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  header {
+    padding: 0 13%;
+  }
+
+  .menuLinks,
+  .logoDesktop {
+    display: block;
+  }
+
+  .logo {
+    width: 5rem;
+    height: 3rem;
+    margin-right: auto;
+  }
+
+  .menuLinks {
+    display: flex;
+    gap: 4rem;
+  }
+
+  .menuLinks a {
+    color: #333;
+  }
+
+  .mobilelogo {
+    display: none;
+  }
+
+  .welcome-section {
+    padding: 10% 0 8% 15%;
+  }
+
+  .welcomeP {
+    width: 50%;
+  }
+
+  .hello {
+    font-size: 1.5rem;
+  }
+
+  .welcome-section h1 {
+    font-size: 4rem;
+    width: 50%;
+  }
+
+  .events {
+    flex-direction: row;
+    padding: 0 10%;
+  }
+
+  .eventCards {
+    height: 13rem;
+    width: auto;
+    grid-template-columns: 1fr;
+    margin-top: 2rem;
+  }
+
+  .eventCards div {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .programInfo {
+    height: 70vh;
+  }
+
+  #joinBtn {
+    border: none;
+    background: none;
+    text-decoration: underline;
+    margin-top: -3rem;
+  }
+
+  #drop {
+    display: none;
+  }
+
+  .speakers {
+    padding: 3% 20%;
+    background-color: #fff;
+  }
+
+  .speakerCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .speakersFull {
+    position: relative;
+    left: 0;
+  }
+
+  .partners {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0;
+  }
+
+  .footer2 {
+    height: 6rem;
+    padding: 5% 15%;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: 1fr 5fr;
+  }
+}
