@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@500&display=swap');
 
 * {
   margin: 0;
@@ -189,6 +190,7 @@ main {
   font-size: 11px;
   color: aliceblue;
   background-color: rgb(75, 72, 72);
+  gap: 1rem;
 }
 
 .eventCards article {
@@ -210,10 +212,11 @@ button {
 }
 
 #joinBtn {
-  width: 65%;
+  width: 75%;
   height: 3rem;
   background-color: rgb(238, 69, 69);
   color: #fff;
+  margin-top: -0.5rem;
 }
 
 .speakers {
