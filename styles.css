@@ -27,7 +27,7 @@ i {
 header {
   display: flex;
   align-items: center;
-  height: 10%;
+  height: 8%;
   width: 100%;
   position: fixed;
   z-index: 2;
@@ -252,11 +252,9 @@ button {
   background-repeat: no-repeat;
   background-position: 30%;
 }
-
 .lighter {
-  color: rgb(204, 201, 201);
+  color:rgb(204, 201, 201);
 }
-
 .speakerInfo {
   display: flex;
   flex-direction: column;
