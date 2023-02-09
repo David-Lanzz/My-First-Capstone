@@ -57,7 +57,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## To see a preview of the project click the link below
+## To see a loom video preview of the project click the link below
 
 (https://www.loom.com/share/0e88334b7e0d4fd9b445b696b53227b9)
 
