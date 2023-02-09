@@ -142,6 +142,7 @@ main {
 
 .welcomeP {
   font-size: 12px;
+  text-align: center;
   margin: 0 0.5rem;
 }
 
@@ -246,6 +247,10 @@ button {
   gap: 0.5rem;
 }
 
+.pp {
+  text-align: center;
+}
+
 .speakerImage {
   width: 80%;
   height: 100%;
@@ -298,6 +303,7 @@ button {
 .aboutP {
   background-color: #fff;
   padding: 1rem;
+  text-align: center;
 }
 
 .heading {
@@ -347,6 +353,7 @@ button {
 
 .abouth {
   margin-left: 2rem;
+  text-align: center;
 }
 
 h3 {
@@ -384,6 +391,7 @@ h3 {
 
 .aboutP1 {
   padding: 1rem 4rem;
+  text-align: center;
 }
 
 .previousSummitCard {
@@ -408,6 +416,7 @@ h3 {
   padding-bottom: 3rem;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .reference li {
@@ -415,15 +424,36 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 15rem;
   height: 10rem;
   opacity: 80%;
+  color: #fff;
   background-size: cover;
 }
 
 .fst {
-  background-image: url('./images/gettyimages-1236879036-612x612.jpg');
-  color: rgb(205, 255, 200);
+  background: url('./images/gettyimages-1236879036-612x612.jpg');
+  height: 4rem;
+}
+
+.fst h4,
+.fst p,
+.lst h4,
+.lstu p {
+  z-index: 3;
+}
+
+.fst::before,
+.lst::before {
+  content: '';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  opacity: 40%;
+  position: absolute;
+  width: 15rem;
+  height: 10rem;
 }
 
 .lst {
@@ -459,6 +489,7 @@ h3 {
   padding: 2rem 0 0 2rem;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
+  text-align: center;
 }
 
 .footer2 {
