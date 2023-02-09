@@ -119,7 +119,7 @@ main {
   background-size: cover;
 }
 
-.welcome-section h1 {
+.backgroundh {
   margin-top: -1.8rem;
   font-weight: 900;
   font-size: 30px;
@@ -132,7 +132,7 @@ main {
 
 .hello {
   font-size: 18px;
-  color: rgb(240, 164, 23);
+  color: rgb(255, 42, 42);
 }
 
 #welcomeP {
@@ -222,7 +222,7 @@ button {
 
 .speakersFull {
   align-items: center;
-  margin-top: -2rem;
+  margin-top: -1rem;
   padding-bottom: 2rem;
   min-height: 20vh;
   width: 100%;
@@ -329,6 +329,11 @@ button {
   align-items: center;
   padding: 20% 5%;
   flex-direction: column;
+}
+
+#abouth {
+  background: none;
+  color: rgb(255, 42, 42);
 }
 
 .praises {
@@ -619,6 +624,7 @@ h3 {
   .speakersFull {
     position: relative;
     left: 0;
+    margin-top: -2rem;
   }
 
   .partners {
