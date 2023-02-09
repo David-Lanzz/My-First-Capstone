@@ -20,6 +20,12 @@ i {
   color: orange;
 }
 
+.sociallink {
+  color: #fff;
+  margin-left: 1rem;
+  font-size: 0.8rem;
+}
+
 .menuLinks,
 .logoDesktop {
   display: none;
@@ -28,7 +34,7 @@ i {
 header {
   display: flex;
   align-items: center;
-  height: 8%;
+  height: 3rem;
   width: 100%;
   position: fixed;
   z-index: 2;
@@ -43,21 +49,16 @@ a {
   text-decoration: none;
 }
 
+.socialmedialinks {
+  display: none;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
   gap: 3px;
   width: 25px;
   margin-left: 7%;
-}
-
-#mainpage {
-  position: relative;
-}
-
-#aboutpage {
-  position: absolute;
-  bottom: 100vh;
 }
 
 #rotateRight,
@@ -159,18 +160,13 @@ main {
   height: 100vh;
   color: aliceblue;
   align-items: center;
-  padding-top: 2rem;
-}
-
-.programInfo h4,
-.speakers h4 {
-  border-bottom: rgb(151, 18, 18) solid 2px;
+  padding: 2rem 0;
 }
 
 .events {
   gap: 0.5rem;
   width: 100%;
-  height: 80%;
+  height: 80vh;
   padding: 2rem 0.5rem;
 }
 
@@ -185,7 +181,7 @@ main {
 
 .eventCards {
   width: 100%;
-  height: auto;
+  height: 100%;
   padding: 1rem;
   font-size: 11px;
   color: aliceblue;
@@ -216,7 +212,6 @@ button {
   height: 3rem;
   background-color: rgb(238, 69, 69);
   color: #fff;
-  margin-top: -0.5rem;
 }
 
 .speakers {
@@ -239,7 +234,7 @@ button {
 .speakerCards {
   gap: 0.5rem;
   width: 100%;
-  height: 80%;
+  min-height: 4rem;
   padding: 2rem 0.5rem 0 0.5rem;
 }
 
@@ -252,12 +247,16 @@ button {
 }
 
 .speakerImage {
-  width: 100%;
-  height: 80%;
+  width: 80%;
+  height: 100%;
   background-image: url('./images/gettyimages-1236949754-612x612.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 30%;
+}
+
+.eventCards:hover {
+  border: solid 1px #fff;
 }
 
 .lighter {
@@ -270,6 +269,7 @@ button {
   gap: 0.5rem;
   color: #333;
   height: 80%;
+  margin-bottom: 1rem;
 }
 
 .dropdown {
@@ -300,6 +300,20 @@ button {
   padding: 1rem;
 }
 
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.redline {
+  height: 1px;
+  width: 12px;
+  margin-bottom: 2rem;
+  background-color: red;
+}
+
 #email {
   display: flex;
   justify-content: center;
@@ -307,6 +321,14 @@ button {
   font-size: 15px;
   color: #333;
   text-decoration: underline;
+}
+
+.about-welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20% 5%;
+  flex-direction: column;
 }
 
 .praises {
@@ -318,11 +340,14 @@ button {
   align-items: center;
 }
 
+.abouth {
+  margin-left: 2rem;
+}
+
 h3 {
   height: 10%;
   padding-top: 2rem;
   font-size: 15px;
-  border-bottom: solid red 1px;
   margin-bottom: 1rem;
 }
 
@@ -330,6 +355,11 @@ h3 {
 .previousSummitCard p {
   padding: 0 2rem;
   font-size: 12px;
+}
+
+#praisesP {
+  width: 70%;
+  margin-left: 4rem;
 }
 
 .logo {
@@ -341,6 +371,10 @@ h3 {
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
+}
+
+.aboutlogo {
+  margin-left: 20%;
 }
 
 .aboutP1 {
@@ -403,6 +437,15 @@ h3 {
   padding: 2rem 0;
 }
 
+.headerlogo {
+  display: none;
+}
+
+#partners {
+  display: none;
+  height: auto;
+}
+
 .partners {
   margin-top: -1rem;
   color: rgb(124, 124, 124);
@@ -435,6 +478,42 @@ h3 {
 
   header {
     padding: 0 13%;
+    margin-top: 1.5rem;
+  }
+
+  .partnerlink {
+    border: solid 2px red;
+    padding: 4px;
+  }
+
+  .socialmedialinks {
+    background-color: #333;
+    height: 1.5rem;
+    z-index: 3;
+    display: flex;
+    padding-left: 70%;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+  }
+
+  .headerlogo {
+    display: block;
+    margin-right: auto;
+  }
+
+  .praises {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logodiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .menuLinks,
@@ -442,10 +521,13 @@ h3 {
     display: block;
   }
 
+  .speakerImage {
+    width: 10rem;
+  }
+
   .logo {
     width: 5rem;
     height: 3rem;
-    margin-right: auto;
   }
 
   .menuLinks {
@@ -457,12 +539,16 @@ h3 {
     color: #333;
   }
 
-  .mobilelogo {
-    display: none;
-  }
-
   .welcome-section {
     padding: 10% 0 8% 15%;
+  }
+
+  #partners {
+    display: flex;
+  }
+
+  .about-welcome-section {
+    padding: 10% 0;
   }
 
   .welcomeP {
@@ -496,14 +582,17 @@ h3 {
   }
 
   .programInfo {
-    height: 70vh;
+    height: 30rem;
+  }
+
+  .abouth {
+    margin-left: 5rem;
   }
 
   #joinBtn {
     border: none;
     background: none;
     text-decoration: underline;
-    margin-top: -3rem;
   }
 
   #drop {
@@ -511,13 +600,20 @@ h3 {
   }
 
   .speakers {
-    padding: 3% 20%;
+    padding: 5% 10%;
     background-color: #fff;
   }
 
   .speakerCards {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 0.5rem;
+  }
+
+  .reference {
+    flex-direction: row;
+    padding: 0 20%;
+    margin-bottom: 5rem;
   }
 
   .speakersFull {
@@ -526,15 +622,38 @@ h3 {
   }
 
   .partners {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    color: rgb(124, 124, 124);
+    font-size: 1.3rem;
+    padding: 2rem 5rem;
+    margin-left: 3rem;
+  }
+
+  .footer {
+    height: 10rem;
   }
 
   .footer2 {
     height: 6rem;
-    padding: 5% 15%;
+    padding: 5% 3% 5% 15%;
     align-items: center;
-    justify-content: center;
-    grid-template-rows: 1fr 5fr;
+    display: flex;
+    gap: 3rem;
+  }
+
+  .aboutlogo {
+    margin-left: 0;
+    height: 8rem;
+    width: 18rem;
+  }
+
+  .aboutP1 {
+    margin-top: 0.5rem;
+  }
+
+  #praisesP {
+    width: 100%;
   }
 }

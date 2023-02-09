@@ -4,29 +4,17 @@ const menuList = document.querySelector('#menuList');
 const rotateRight = document.querySelector('#rotateRight');
 const rotateLeft = document.querySelector('#rotateLeft');
 const remove = document.querySelector('#remove');
-const main = document.querySelector('#main');
+const main = document.querySelector('main');
 const speakersFull = document.querySelector('#speakersFull');
 const speakerFullSection = document.querySelector('#speakerFullSection');
 const drop = document.querySelector('#drop');
-const mainpage = document.querySelector('#mainpage');
+const footer2 = document.querySelector('#footer2');
+if (window.screen.width < 768) {
+  footer2.style.display = 'none';
+}
 let activeMenu = false;
-const aboutpage = document.querySelector('#aboutpage');
-const logo = document.querySelector('#logo');
-logo.addEventListener('click', () => {
-  if (window.screen.width < 768) {
-    mainpage.style.position = 'relative';
-    mainpage.style.bottom = '0';
-    aboutpage.style.position = 'absolute';
-    aboutpage.style.bottom = '100vh';
-    menuList.style.top = '-100vh';
-  }
-});
 menuList.addEventListener('click', (e) => {
-  if (e.target.id === 'mainLink') {
-    mainpage.style.position = 'relative';
-    mainpage.style.bottom = '0';
-    aboutpage.style.position = 'absolute';
-    aboutpage.style.bottom = '100vh';
+  if (e.target.id === 'mainLink' || e.target.id === 'aboutLink') {
     menuList.style.top = '-100vh';
     remove.style.display = 'block';
     rotateRight.style.transform = 'rotate(0) translateX(0) translateY(0)';
@@ -35,18 +23,6 @@ menuList.addEventListener('click', (e) => {
     rotateLeft.style.backgroundColor = '#333';
     main.style.filter = 'blur(0)';
     activeMenu = false;
-  } else if (e.target.id === 'aboutLink') {
-    mainpage.style.position = 'absolute';
-    mainpage.style.bottom = '100vh';
-    aboutpage.style.position = 'relative';
-    aboutpage.style.bottom = '0';
-    menuList.style.top = '-100vh';
-    remove.style.display = 'block';
-    rotateRight.style.transform = 'rotate(0) translateX(0) translateY(0)';
-    rotateLeft.style.transform = 'rotate(0) translateX(0)';
-    rotateRight.style.backgroundColor = '#333';
-    rotateLeft.style.backgroundColor = '#333';
-    main.style.filter = 'blur(0)';
   }
 });
 
@@ -91,14 +67,14 @@ const speakerObj = [
 function createSmallSpeakerSection() {
   for (let i = 0; i < 2; i += 1) {
     speakerSection.innerHTML += `
-        <li class="speakerCard">
-            <div class="speakerImage" style="background-image: url('${speakerObj[i].Img}');"></div>
-            <ul class="speakerInfo">
-                <li class="speakerHeader">${speakerObj[i].speakerHeader}</li>
-                <li class="speakerInfoRed">${speakerObj[i].speakerInfoRed}</li>
-                <li class="speakerInfoBlack">${speakerObj[i].speakerInfoBlack}</li>
-            </ul>
-        </li>`;
+         <li class="speakerCard">
+             <div class="speakerImage" style="background-image: url('${speakerObj[i].Img}');"></div>
+             <ul class="speakerInfo">
+                 <li class="speakerHeader">${speakerObj[i].speakerHeader}</li>
+                 <li class="speakerInfoRed">${speakerObj[i].speakerInfoRed}</li>
+                 <li class="speakerInfoBlack">${speakerObj[i].speakerInfoBlack}</li>
+             </ul>
+         </li>`;
   }
 }
 createSmallSpeakerSection();
@@ -106,14 +82,14 @@ createSmallSpeakerSection();
 function createLargeSpeakerSection() {
   for (let i = 2; i < speakerObj.length; i += 1) {
     speakerFullSection.innerHTML += `
-            <li class="speakerCard">
-                <div class="speakerImage" style="background-image: url('${speakerObj[i].Img}');"></div>
-                <ul class="speakerInfo">
-                    <li class="speakerHeader">${speakerObj[i].speakerHeader}</li>
-                    <li class="speakerInfoRed">${speakerObj[i].speakerInfoRed}</li>
-                    <li class="speakerInfoBlack">${speakerObj[i].speakerInfoBlack}</li>
-                </ul>
-            </li>`;
+             <li class="speakerCard">
+                 <div class="speakerImage" style="background-image: url('${speakerObj[i].Img}');"></div>
+                 <ul class="speakerInfo">
+                     <li class="speakerHeader">${speakerObj[i].speakerHeader}</li>
+                     <li class="speakerInfoRed">${speakerObj[i].speakerInfoRed}</li>
+                     <li class="speakerInfoBlack">${speakerObj[i].speakerInfoBlack}</li>
+                 </ul>
+             </li>`;
   }
 }
 createLargeSpeakerSection();
