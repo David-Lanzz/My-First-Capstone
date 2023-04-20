@@ -11,7 +11,6 @@
 body {
   width: 100%;
   height: 100vh;
-  font-family: 'Poppins', 'Lato', Tahoma, sans-serif;
   color: #333;
   transition: 0.5s;
   background-color: rgb(235, 229, 229);
@@ -52,6 +51,7 @@ i {
 .socialmedialinks {
   display: none;
 }
+drop
 
 header {
   height: 3rem;
@@ -199,7 +199,6 @@ main {
 input,
 button {
   border: none;
-  font-family: 'Poppins', 'Lato', Tahoma, sans-serif;
 }
 
 .eventTitle {
@@ -279,7 +278,7 @@ button {
   color: #333;
   background-color: white;
   height: 2.5rem;
-  margin: 1rem 0;
+  margin: 1rem;
 }
 
 .drop {
