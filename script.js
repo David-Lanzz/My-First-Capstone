@@ -9,8 +9,10 @@ const speakersFull = document.querySelector('#speakersFull');
 const speakerFullSection = document.querySelector('#speakerFullSection');
 const drop = document.querySelector('#drop');
 const footer2 = document.querySelector('#footer2');
+const partners = document.querySelector('#partners');
+footer2.style.display = 'none';
 if (window.screen.width < 768) {
-  footer2.style.display = 'none';
+  partners.style.display = 'none';
 }
 let activeMenu = false;
 menuList.addEventListener('click', (e) => {
@@ -67,7 +69,7 @@ const speakerObj = [
 function createSmallSpeakerSection() {
   for (let i = 0; i < 2; i += 1) {
     speakerSection.innerHTML += `
-         <li class="speakerCard">
+         <li class="speakerCard grid">
              <div class="speakerImage" style="background-image: url('${speakerObj[i].Img}');"></div>
              <ul class="speakerInfo">
                  <li class="speakerHeader">${speakerObj[i].speakerHeader}</li>
@@ -82,7 +84,7 @@ createSmallSpeakerSection();
 function createLargeSpeakerSection() {
   for (let i = 2; i < speakerObj.length; i += 1) {
     speakerFullSection.innerHTML += `
-             <li class="speakerCard">
+             <li class="speakerCard grid">
                  <div class="speakerImage" style="background-image: url('${speakerObj[i].Img}');"></div>
                  <ul class="speakerInfo">
                      <li class="speakerHeader">${speakerObj[i].speakerHeader}</li>

@@ -8,17 +8,16 @@ const lorem = document.querySelector('#aboutlorem');
 const abouthello = document.querySelector('#abouthello');
 const partners = document.querySelector('#partners');
 if (window.screen.width > 768) {
-  footer2.style.backgroundColor = '#333';
-  footer2.style.color = '#fff';
+  footer2.style.backgroundColor = '#fff';
+  footer2.style.color = '#333';
   partners.style.display = 'none';
   abouthello.style.display = 'none';
   lorem.innerHTML += ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti perferendis suscipit molestias est fuga nesciunt dicta,
      placeat autem provident debitis quaerat aliquid alias animi tempora!
       Nihil sapiente omnis consequuntur eos.`;
 }
-if (window.screen.width < 768) {
-  partners.style.display = 'block';
-}
+partners.style.display = 'block';
+
 let activeMenu = false;
 const main = document.querySelector('main');
 menuList.addEventListener('click', (e) => {

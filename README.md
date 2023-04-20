@@ -1,4 +1,5 @@
 <a name="readme-top"></a>
+<img src="./images/images/myLogo.png">
 
 # 📗 Table of Contents
 
@@ -23,7 +24,7 @@
 - [📝 License](#license)
 
 
-# 📖 [MY-PORTFOLIO] <a name="about-project"></a>
+# 📖 [MY-FIRST-CAPSTONE] <a name="about-project"></a>
 
 > 
 **MY-FIRST-CAPSTONE** is a project i worked on in honor of my favorite artiste, Wizkid. It is a project that speaks about a festival dedicated to Musical talents all over Nigeria and the world.
@@ -32,7 +33,7 @@
 
 ### Tech Stack <a name="tech-stack">Frontend Technology</a>
 
-> The Tech stack used in this project is the frontend technology and it consists of just the index.html,scipt.js and styles.css files
+> The Tech stack used in this project is the FRONTEND technology and it consists of just the index.html,scipt.js and styles.css files
 
 <details>
   <summary>Cascading Style Sheet</summary>
@@ -45,6 +46,13 @@
   <summary>Mark-Up Language</summary>
   <ul>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>JavaScript</summary>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">JavaScript</a></li>
   </ul>
 </details>
 
@@ -96,7 +104,10 @@ Install this project with:
 ### Usage
 
 
-To run the project, Click on the live Demo link
+To run the project, Click on the live Demo link or 
+- clone the repo
+- cd MY-FIRST-CAPSTONE
+- Run with live server extension
 
 ### Run tests
 
@@ -114,7 +125,7 @@ npx eslint .
 
 You can deploy this project using:
 
-githack
+githack,github pages, netlify, render
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,11 +137,11 @@ githack
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/David-Lanzz)
-- Twitter: [@twitterhandle](@LanzzDavid)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/lanzz-david-378b9a250)
+- GitHub: [@githubhandle]("https://github.com/David-Lanzz")
+- Twitter: [@twitterhandle]("https://twitter.com/LanzzDavid")
+- LinkedIn: [LinkedIn]("https://www.linkedin.com/in/david-lanzz/")
 
-👤
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 

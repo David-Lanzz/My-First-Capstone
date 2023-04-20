@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav class="menuList" s id="menuList">
+    <nav class="menuList flex col" s id="menuList">
         <a href="./about.html" id="aboutLink">About</a>
     </nav>
     <ul class="socialmedialinks">
@@ -21,8 +21,8 @@
         <li class="sociallink">MyPage</li>
         <li class="sociallink">Logout</li>
     </ul>
-    <header>
-        <a href="#" class="menu" id="menu">
+    <header class="flex align">
+        <a href="#" class="menu flex col" id="menu">
             <div class="menubar" id="remove"></div>
             <div class="menubar" id="rotateRight"></div>
             <div class="menubar" id="rotateLeft"></div>
@@ -37,7 +37,7 @@
     </header>
     <main id="main">
         <section id="mainpage">
-            <section class="welcome-section">
+            <section class="welcome-section flex col">
                 <p class="hello">"Hello Nigeria!"</p>
                 <h1 class="backgroundh">"MADE IN LAGOS" WIZKID FEST 2023</h1>
                 <p class="welcomeP" id="welcomeP">A joyful celebration believing in the
@@ -48,43 +48,43 @@
                 <h2>2023.10.15(THU) ~ 16(FRI)</h2>
                 <p class="welcomeP welcomeP2">@Eko Hotels and Suites,Lagos Nigeria</p>
             </section>
-            <section class="programInfo" id="events">
+            <section class="programInfo align flex col" id="events">
                 <h4>Main Program</h4>
-                <ul class="events">
-                    <li><a href="#" class="eventCards">
-                            <article>
+                <ul class="events flex col">
+                    <li><a href="#" class="eventCards grid align">
+                            <article class="flex align">
                                 <i class="fa-solid fa-headset fa-2x"></i>
                                 <p class="eventTitle">Opening Event</p>
                             </article>
                             <p>Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Officia quia asperiores dicta error</p>
                         </a></li>
-                    <li><a href="#" class="eventCards">
-                            <article>
+                    <li><a href="#" class="eventCards grid align">
+                            <article class="flex align">
                                 <i class="fa-solid fa-headset fa-2x"></i>
                                 <p class="eventTitle">Comedy</p>
                             </article>
                             <p>Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Officia quia asperiores dicta error</p>
                         </a></li>
-                    <li><a href="#" class="eventCards">
-                            <article>
+                    <li><a href="#" class="eventCards grid align">
+                            <article class="flex align">
                                 <i class="fa-solid fa-headset fa-2x"></i>
                                 <p class="eventTitle">Artiste Performance</p>
                             </article>
                             <p>Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Officia quia asperiores dicta error</p>
                         </a></li>
-                    <li><a href="#" class="eventCards">
-                            <article>
+                    <li><a href="#" class="eventCards grid align">
+                            <article class="flex align">
                                 <i class="fa-solid fa-headset fa-2x"></i>
                                 <p class="eventTitle">Wizkid's Sing Along Session</p>
-                            </article>
+                            </article class="flex align">
                             <p>Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Officia quia asperiores dicta error</p>
                         </a></li>
-                    <li><a href="#" class="eventCards">
-                            <article>
+                    <li><a href="#" class="eventCards grid align">
+                            <article class="flex align">
                                 <i class="fa-solid fa-headset fa-2x"></i>
                                 <p class="eventTitle">Essence Cover</p>
                             </article>
@@ -96,35 +96,35 @@
             </section>
 
             <!--DYNAMIC SPEAKERS WINDOW-->
-            <section class="speakers">
-                <div class="heading">
+            <section class="speakers flex col">
+                <div class="heading col justify align flex">
                     <h4>Featured Talents</h4>
                     <div class="redline"></div>
                 </div>
-                <ul class="speakerCards" id="speakerSection">
+                <ul class="speakerCards flex col" id="speakerSection">
 
                 </ul>
 
-                <div class="speakersFull" id="speakersFull">
-                    <ul class="speakerCards" id="speakerFullSection">
+                <div class="speakersFull align flex col" id="speakersFull">
+                    <ul class="speakerCards flex col" id="speakerFullSection">
                     </ul>
 
                 </div>
-                <button class="dropdown" id="drop">MORE <span class="drop">&#8744;</span></button>
+                <button class="dropdown flex justify align" id="drop">MORE <span class="drop">&#8744;</span></button>
             </section>
         </section>
-        <section class="footer" id=partners>
+        <section class="footer" id="partners">
 
-            <div class="heading">
+            <div class="heading justify align flex col">
                 <h4>Partners</h4>
                 <div class="redline"></div>
             </div>
-            <ul class="partners">
-                <li class="lighter">CocaCola</li>
-                <li>Chipper Cash</li>
-                <li class="lighter">Pepsi</li>
-                <li class="toright">ZENITH</li>
-                <li class="lighter toright">Sterling</li>
+            <ul class="partners grid">
+                <li class="lighter"><img class="sponsors" src="./images/pepsi.png" alt=""></li>
+                <li><img class="sponsors" src="./images/download.png" alt=""></li>
+                <li class="lighter"><img class="sponsors" src="./images/zenith.png" alt=""></li>
+                <li class="toright"><img class="sponsors" src="./images/bugatti.png" alt=""></li>
+                <li class="lighter"><img class="sponsors" src="./images/images/myLogo.png" alt=""></li>
             </ul>
         </section>
         <ul class="footer2" id="footer2">

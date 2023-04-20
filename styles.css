@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -14,6 +15,26 @@ body {
   color: #333;
   transition: 0.5s;
   background-color: rgb(235, 229, 229);
+}
+
+.flex {
+  display: flex;
+}
+
+.align {
+  align-items: center;
+}
+
+.justify {
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.col {
+  flex-direction: column;
 }
 
 i {
@@ -27,13 +48,12 @@ i {
 }
 
 .menuLinks,
-.logoDesktop {
+.logoDesktop,
+.socialmedialinks {
   display: none;
 }
 
 header {
-  display: flex;
-  align-items: center;
   height: 3rem;
   width: 100%;
   position: fixed;
@@ -47,15 +67,10 @@ li {
 
 a {
   text-decoration: none;
-}
-
-.socialmedialinks {
-  display: none;
+  color: #333;
 }
 
 .menu {
-  display: flex;
-  flex-direction: column;
   gap: 3px;
   width: 25px;
   margin-left: 7%;
@@ -79,8 +94,6 @@ a {
   top: -100vh;
   transition: 0.5s;
   z-index: 1;
-  display: flex;
-  flex-direction: column;
 }
 
 .menuList a {
@@ -96,16 +109,6 @@ a {
 main {
   height: 90%;
   margin-bottom: 2rem;
-}
-
-.welcome-section,
-.programInfo,
-.events,
-.speakers,
-.speakerCards,
-.speakersFull {
-  display: flex;
-  flex-direction: column;
 }
 
 /* Welcome Section */
@@ -160,7 +163,6 @@ main {
   background-image: url('./images/y-so-serious.png');
   height: 100vh;
   color: aliceblue;
-  align-items: center;
   padding: 2rem 0;
 }
 
@@ -173,10 +175,10 @@ main {
 
 .eventCards,
 .speakerCard {
-  display: grid;
-  align-items: center;
   grid-template-columns: 1fr 2fr;
   gap: 1rem;
+
+  /* check */
   padding: 0 1rem;
 }
 
@@ -191,9 +193,7 @@ main {
 }
 
 .eventCards article {
-  display: flex;
   gap: 0.5rem;
-  align-items: center;
 }
 
 input,
@@ -216,13 +216,11 @@ button {
 }
 
 .speakers {
-  align-items: center;
   padding: 2rem 0 0 0;
   background-color: #fff;
 }
 
 .speakersFull {
-  align-items: center;
   margin-top: -1rem;
   padding-bottom: 2rem;
   min-height: 20vh;
@@ -269,8 +267,6 @@ button {
 }
 
 .speakerInfo {
-  display: flex;
-  flex-direction: column;
   gap: 0.5rem;
   color: #333;
   height: 80%;
@@ -306,13 +302,6 @@ button {
   text-align: center;
 }
 
-.heading {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .redline {
   height: 1px;
   width: 12px;
@@ -321,8 +310,6 @@ button {
 }
 
 #email {
-  display: flex;
-  justify-content: center;
   margin-top: -2rem;
   font-size: 15px;
   color: #333;
@@ -330,11 +317,7 @@ button {
 }
 
 .about-welcome-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 20% 5%;
-  flex-direction: column;
 }
 
 #abouth {
@@ -346,9 +329,6 @@ button {
   width: 100%;
   min-height: 20vh;
   background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .abouth {
@@ -398,9 +378,6 @@ h3 {
   width: 100%;
   min-height: 20vh;
   border-top: solid rgb(199, 198, 198) 1px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .mobilelogo {
@@ -410,20 +387,12 @@ h3 {
 .reference {
   margin-top: 1rem;
   min-height: 10vh;
-  display: flex;
   gap: 1rem;
   width: 100%;
   padding-bottom: 3rem;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .reference li {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 15rem;
   height: 10rem;
   opacity: 80%;
@@ -446,14 +415,13 @@ h3 {
 .fst::before,
 .lst::before {
   content: '';
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: red;
   opacity: 40%;
   position: absolute;
   width: 15rem;
   height: 10rem;
+
+  /* check just ali flex */
 }
 
 .lst {
@@ -464,30 +432,21 @@ h3 {
 .footer {
   background-color: #333;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   height: 30vh;
   color: aliceblue;
-  padding: 2rem 0;
+  padding: 1rem 0 5rem 0;
 }
 
 .headerlogo {
   display: none;
 }
 
-#partners {
-  display: none;
-  height: auto;
-}
-
 .partners {
+  grid-template-columns: 1fr 1fr 1fr;
   margin-top: -1rem;
   color: rgb(124, 124, 124);
   font-size: 1.3rem;
-  display: grid;
-  padding: 2rem 0 0 2rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 2rem;
   gap: 1rem;
   text-align: center;
 }
@@ -496,11 +455,14 @@ h3 {
   width: 100%;
   background-color: #fff;
   height: 8rem;
-  display: grid;
-  align-items: center;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   padding: 2rem;
+}
+
+.sponsors {
+  width: 5rem;
+  height: 3rem;
 }
 
 .final {
@@ -535,7 +497,7 @@ h3 {
 
   .headerlogo {
     display: block;
-    margin-right: auto;
+    margin: 0 auto 0 0;
   }
 
   .praises {
@@ -581,6 +543,7 @@ h3 {
 
   #partners {
     display: flex;
+    flex-direction: column;
   }
 
   .about-welcome-section {
@@ -660,16 +623,21 @@ h3 {
 
   .partners {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
     color: rgb(124, 124, 124);
     font-size: 1.3rem;
-    padding: 2rem 5rem;
+    padding: 2rem 7rem;
     margin-left: 3rem;
   }
 
   .footer {
-    height: 10rem;
+    height: 28rem;
+  }
+
+  .sponsors {
+    width: 8rem;
+    height: 7rem;
   }
 
   .footer2 {

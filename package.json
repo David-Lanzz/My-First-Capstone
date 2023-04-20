@@ -1,10 +1,26 @@
 {
+  "name": "my-first-capstone",
+  "version": "1.0.0",
+  "description": "<a name=\"readme-top\"></a>\r <img src=\"./images/images/myLogo.png\">",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/David-Lanzz/My-First-Capstone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/David-Lanzz/My-First-Capstone/issues"
+  },
+  "homepage": "https://github.com/David-Lanzz/My-First-Capstone#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.27.5",
-    "hint": "^7.1.3",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
