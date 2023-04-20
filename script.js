@@ -1,5 +1,4 @@
 const speakerSection = document.querySelector('#speakerSection');
-const menu = document.querySelector('#menu');
 const menuList = document.querySelector('#menuList');
 const rotateRight = document.querySelector('#rotateRight');
 const rotateLeft = document.querySelector('#rotateLeft');
@@ -14,20 +13,8 @@ footer2.style.display = 'none';
 if (window.screen.width < 768) {
   partners.style.display = 'none';
 }
-let activeMenu = false;
-menuList.addEventListener('click', (e) => {
-  if (e.target.id === 'mainLink' || e.target.id === 'aboutLink') {
-    menuList.style.top = '-100vh';
-    remove.style.display = 'block';
-    rotateRight.style.transform = 'rotate(0) translateX(0) translateY(0)';
-    rotateLeft.style.transform = 'rotate(0) translateX(0)';
-    rotateRight.style.backgroundColor = '#333';
-    rotateLeft.style.backgroundColor = '#333';
-    main.style.filter = 'blur(0)';
-    activeMenu = false;
-  }
-});
 
+let activeMenu = false;
 const speakerObj = [
   {
     speakerHeader: 'Wizkid',
@@ -96,39 +83,39 @@ function createLargeSpeakerSection() {
 }
 createLargeSpeakerSection();
 
-menu.addEventListener('click', () => {
-  if (activeMenu === false) {
-    menuList.style.top = '0';
-    remove.style.display = 'none';
-    rotateRight.style.transform = 'rotate(45deg) translateX(20%) translateY(250%)';
-    rotateLeft.style.transform = 'rotate(-45deg) translateX(-20%)';
-    rotateRight.style.backgroundColor = 'red';
-    rotateLeft.style.backgroundColor = 'red';
-    main.style.filter = 'blur(6px)';
-    activeMenu = true;
-  } else {
-    menuList.style.top = '-100vh';
-    remove.style.display = 'block';
-    rotateRight.style.transform = 'rotate(0) translateX(0) translateY(0)';
-    rotateLeft.style.transform = 'rotate(0) translateX(0)';
-    rotateRight.style.backgroundColor = '#333';
-    rotateLeft.style.backgroundColor = '#333';
-    main.style.filter = 'blur(0)';
-    activeMenu = false;
-  }
-});
 let dropped = false;
-
-drop.addEventListener('click', () => {
-  if (dropped === false) {
-    speakersFull.style.position = 'relative';
-    speakersFull.style.right = '0';
-    drop.innerHTML = 'LESS  <span class="drop">^</span>';
-    dropped = true;
-  } else {
-    speakersFull.style.position = 'absolute';
-    speakersFull.style.right = '50rem';
-    drop.innerHTML = 'MORE  <span class="drop">&#8744;</span>';
-    dropped = false;
+window.addEventListener('click', (e) => {
+  if (e.target.id === 'menu' || e.target.id === 'remove' || e.target.id === 'rotateRight' || e.target.id === 'rotateLeft') {
+    if (activeMenu === false) {
+      menuList.style.top = '0';
+      remove.style.display = 'none';
+      rotateRight.style.transform = 'rotate(45deg) translateX(20%) translateY(250%)';
+      rotateLeft.style.transform = 'rotate(-45deg) translateX(-20%)';
+      rotateRight.style.backgroundColor = 'red';
+      rotateLeft.style.backgroundColor = 'red';
+      main.style.filter = 'blur(6px)';
+      activeMenu = true;
+    } else if (activeMenu === true) {
+      menuList.style.top = '-100vh';
+      remove.style.display = 'block';
+      rotateRight.style.transform = 'rotate(0) translateX(0) translateY(0)';
+      rotateLeft.style.transform = 'rotate(0) translateX(0)';
+      rotateRight.style.backgroundColor = '#333';
+      rotateLeft.style.backgroundColor = '#333';
+      main.style.filter = 'blur(0)';
+      activeMenu = false;
+    }
+  } else if (e.target.id === 'drop') {
+    if (dropped === false) {
+      speakersFull.style.position = 'relative';
+      speakersFull.style.right = '0';
+      drop.innerHTML = 'LESS  <span class="drop">^</span>';
+      dropped = true;
+    } else if (dropped === true) {
+      speakersFull.style.position = 'absolute';
+      speakersFull.style.right = '50rem';
+      drop.innerHTML = 'MORE  <span class="drop">&#8744;</span>';
+      dropped = false;
+    }
   }
 });
