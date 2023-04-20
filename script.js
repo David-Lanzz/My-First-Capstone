@@ -11,7 +11,7 @@ const drop = document.querySelector('#drop');
 const footer2 = document.querySelector('#footer2');
 const partners = document.querySelector('#partners');
 footer2.style.display = 'none';
-if (window.screen.width < 730) {
+if (window.screen.width < 630) {
   partners.style.display = 'none';
 }
 let activeMenu = false;
