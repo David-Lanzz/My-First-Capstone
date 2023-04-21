@@ -10,10 +10,6 @@ const drop = document.querySelector('#drop');
 const footer2 = document.querySelector('#footer2');
 const partners = document.querySelector('#partners');
 footer2.style.display = 'none';
-partners.style.display = 'grid'
-if (window.screen.width < 768) {
-  partners.style.display = 'none';
-}
 
 let activeMenu = false;
 const speakerObj = [
