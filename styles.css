@@ -470,8 +470,57 @@ h3 {
 }
 
 @media screen and (min-width: 768px) {
-  .menu {
+  .menu,
+  #drop {
     display: none;
+  }
+
+  .socialmedialinks,
+  .praises,
+  .logodiv,
+  .footer2 {
+    align-items: center;
+  }
+
+  .menuLinks,
+  .logoDesktop,
+  .headerlogo {
+    display: block;
+  }
+
+  .socialmedialinks,
+  .praises,
+  .logodiv,
+  .menuLinks,
+  .footer2 {
+    display: flex;
+  }
+
+  .praises,
+  .logodiv,
+  .eventCards article {
+    flex-direction: column;
+  }
+
+  .praises,
+  .logoDesktop {
+    justify-content: center;
+  }
+
+  .welcomeP,
+  .welcome-section h1 {
+    width: 50%;
+  }
+
+  .events,
+  .reference {
+    flex-direction: row;
+  }
+
+  .speakerCards,
+  .partners,
+  #partners {
+    display: grid;
   }
 
   header {
@@ -488,35 +537,13 @@ h3 {
     background-color: #333;
     height: 1.5rem;
     z-index: 3;
-    display: flex;
     padding-left: 70%;
     width: 100%;
     position: fixed;
-    align-items: center;
   }
 
   .headerlogo {
-    display: block;
     margin: 0 auto 0 0;
-  }
-
-  .praises {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .logodiv {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .menuLinks,
-  .logoDesktop {
-    display: block;
   }
 
   .speakerImage {
@@ -529,7 +556,6 @@ h3 {
   }
 
   .menuLinks {
-    display: flex;
     gap: 4rem;
   }
 
@@ -545,21 +571,15 @@ h3 {
     padding: 10% 0;
   }
 
-  .welcomeP {
-    width: 50%;
-  }
-
   .hello {
     font-size: 1.5rem;
   }
 
   .welcome-section h1 {
     font-size: 4rem;
-    width: 50%;
   }
 
   .events {
-    flex-direction: row;
     padding: 0 10%;
   }
 
@@ -571,7 +591,6 @@ h3 {
   }
 
   .eventCards article {
-    flex-direction: column;
     gap: 1rem;
   }
 
@@ -589,23 +608,17 @@ h3 {
     text-decoration: underline;
   }
 
-  #drop {
-    display: none;
-  }
-
   .speakers {
     padding: 5% 10%;
     background-color: #fff;
   }
 
   .speakerCards {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 0.5rem;
   }
 
   .reference {
-    flex-direction: row;
     padding: 0 20%;
     margin-bottom: 5rem;
   }
@@ -617,7 +630,6 @@ h3 {
   }
 
   .partners {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 4rem;
     color: rgb(124, 124, 124);
@@ -630,10 +642,6 @@ h3 {
     height: 28rem;
   }
 
-  #partners {
-    display: grid;
-  }
-
   .sponsors {
     width: 8rem;
     height: 7rem;
@@ -643,7 +651,6 @@ h3 {
     height: 6rem;
     padding: 5% 3% 5% 15%;
     align-items: center;
-    display: flex;
     gap: 3rem;
   }
 
