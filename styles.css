@@ -73,7 +73,8 @@ i {
 .menuLinks,
 .logoDesktop,
 .socialmedialinks,
-.headerlogo {
+.headerlogo,
+.footer {
   display: none;
 }
 
@@ -540,11 +541,6 @@ h3 {
     padding: 10% 0 8% 15%;
   }
 
-  #partners {
-    display: flex;
-    flex-direction: column;
-  }
-
   .about-welcome-section {
     padding: 10% 0;
   }
@@ -632,6 +628,10 @@ h3 {
 
   .footer {
     height: 28rem;
+  }
+
+  #partners {
+    display: grid;
   }
 
   .sponsors {
