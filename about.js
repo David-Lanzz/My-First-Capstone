@@ -20,18 +20,6 @@ partners.style.display = 'block';
 
 let activeMenu = false;
 const main = document.querySelector('main');
-menuList.addEventListener('click', (e) => {
-  if (e.target.id === 'mainLink' || e.target.id === 'aboutLink') {
-    menuList.style.top = '-100vh';
-    remove.style.display = 'block';
-    rotateRight.style.transform = 'rotate(0) translateX(0) translateY(0)';
-    rotateLeft.style.transform = 'rotate(0) translateX(0)';
-    rotateRight.style.backgroundColor = '#333';
-    rotateLeft.style.backgroundColor = '#333';
-    main.style.filter = 'blur(0)';
-    activeMenu = false;
-  }
-});
 
 menu.addEventListener('click', () => {
   if (activeMenu === false) {
