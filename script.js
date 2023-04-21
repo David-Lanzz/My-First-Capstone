@@ -8,7 +8,6 @@ const speakersFull = document.querySelector('#speakersFull');
 const speakerFullSection = document.querySelector('#speakerFullSection');
 const drop = document.querySelector('#drop');
 const footer2 = document.querySelector('#footer2');
-const partners = document.querySelector('#partners');
 footer2.style.display = 'none';
 
 let activeMenu = false;
