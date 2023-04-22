@@ -8,6 +8,7 @@ const speakersFull = document.querySelector('#speakersFull');
 const speakerFullSection = document.querySelector('#speakerFullSection');
 const drop = document.querySelector('#drop');
 const footer2 = document.querySelector('#footer2');
+const ticketspage = document.querySelector('.ticketspage');
 footer2.style.display = 'none';
 
 let activeMenu = false;
@@ -113,5 +114,7 @@ window.addEventListener('click', (e) => {
       drop.innerHTML = 'MORE  <span class="drop">&#8744;</span>';
       dropped = false;
     }
+  } else if (e.target.id === 'joinBtn') {
+    ticketspage.classList.toggle('hidetickets');
   }
 });

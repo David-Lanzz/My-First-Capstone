@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  transition: 0.5s;
 }
 
 body {
@@ -13,6 +14,17 @@ body {
   color: #333;
   transition: 0.5s;
   background-color: rgb(235, 229, 229);
+  animation: opacity 0.5s;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
 }
 
 li {
@@ -61,6 +73,11 @@ header,
   width: 100%;
 }
 
+input,
+button {
+  border: none;
+}
+
 i {
   color: orange;
 }
@@ -90,7 +107,9 @@ header,
 .speakerCard,
 .aboutP,
 .praises,
-.footer2 {
+.footer2,
+.ticketspage,
+.ticket button {
   background-color: #fff;
 }
 
@@ -111,6 +130,47 @@ header {
   background-color: #333;
   z-index: 9;
   margin-left: 70%;
+}
+
+.ticketspage,
+.ticket {
+  padding: 1rem;
+}
+
+.ticketspage {
+  gap: 2rem;
+  height: 20rem;
+  overflow-y: scroll;
+  right: 0;
+}
+
+.hidetickets {
+  position: absolute;
+  transition: 0.3s;
+  right: 40rem;
+}
+
+.theader {
+  margin: 4rem 0 0 0;
+  text-align: center;
+}
+
+.ticket {
+  height: 10rem;
+  background-color: #333333cb;
+  color: rgb(240, 188, 91);
+  border-radius: 0.5rem;
+}
+
+.ticket button {
+  margin-left: auto;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.ticket:hover {
+  transform: scale(1.03);
 }
 
 .menuList {
@@ -217,11 +277,6 @@ main {
 
 .eventCards article {
   gap: 0.5rem;
-}
-
-input,
-button {
-  border: none;
 }
 
 .eventTitle {
@@ -540,6 +595,10 @@ h3 {
     padding-left: 70%;
     width: 100%;
     position: fixed;
+  }
+
+  .ticketspage {
+    padding: 0 25%;
   }
 
   .headerlogo {
