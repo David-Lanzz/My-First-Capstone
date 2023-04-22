@@ -147,7 +147,7 @@ header {
 .hidetickets {
   position: absolute;
   transition: 0.3s;
-  right: 100rem;
+  right: 400rem;
 }
 
 .theader {
