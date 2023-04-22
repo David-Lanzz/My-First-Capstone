@@ -14,7 +14,7 @@ body {
   color: #333;
   transition: 0.5s;
   background-color: rgb(235, 229, 229);
-  animation: opacity 0.5s;
+  animation: opacity 1s;
 }
 
 @keyframes opacity {
@@ -147,7 +147,7 @@ header {
 .hidetickets {
   position: absolute;
   transition: 0.3s;
-  right: 40rem;
+  right: 100rem;
 }
 
 .theader {
