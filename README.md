@@ -67,7 +67,7 @@
 
 ## To see a loom video preview of the project click the link below
 
-(https://www.loom.com/share/0e88334b7e0d4fd9b445b696b53227b9)
+(https://www.loom.com/share/f8e536fedc9541798e915dbfd603b2fa)
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
