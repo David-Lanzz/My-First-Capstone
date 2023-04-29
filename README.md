@@ -137,9 +137,9 @@ githack,github pages, netlify, render
 
 👤 **Author1**
 
-- GitHub: [@githubhandle]("https://github.com/David-Lanzz")
-- Twitter: [@twitterhandle]("https://twitter.com/LanzzDavid")
-- LinkedIn: [LinkedIn]("https://www.linkedin.com/in/david-lanzz/")
+- GitHub: [@githubhandle](https://github.com/David-Lanzz)
+- Twitter: [@twitterhandle](https://twitter.com/LanzzDavid)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/david-lanzz/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
